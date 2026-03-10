@@ -1,0 +1,25 @@
+{
+  "name": "socialbazaar",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "db:generate": "pnpm --filter @socialbazaar/db generate",
+    "db:push": "pnpm --filter @socialbazaar/db push",
+    "db:studio": "pnpm --filter @socialbazaar/db studio"
+  },
+  "devDependencies": {
+    "@socialbazaar/eslint-config": "workspace:*",
+    "@socialbazaar/prettier-config": "workspace:*",
+    "@socialbazaar/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "^2.1.0"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20"
+  }
+}
