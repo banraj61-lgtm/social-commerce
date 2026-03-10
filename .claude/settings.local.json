@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm --version)",
+      "Bash(node --version)",
+      "Bash(npx --version)",
+      "Bash(pnpm install)",
+      "Bash(pnpm db:generate)",
+      "Bash(pnpm ls -r --depth 0)",
+      "Bash(git init)",
+      "Bash(git add -A)",
+      "Bash(git status -u)",
+      "Bash(git add .claude/settings.local.json)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

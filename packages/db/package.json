@@ -1,0 +1,24 @@
+{
+  "name": "@socialbazaar/db",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "generate": "prisma generate",
+    "push": "prisma db push",
+    "studio": "prisma studio",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0"
+  },
+  "devDependencies": {
+    "@socialbazaar/eslint-config": "workspace:*",
+    "@socialbazaar/typescript-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "prisma": "^5.14.0",
+    "typescript": "^5.4.0"
+  }
+}
